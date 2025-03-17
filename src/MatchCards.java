@@ -43,8 +43,11 @@ public class MatchCards {
     ArrayList<Card> cardSet;
     ImageIcon cardBackImageIcon;
 
+    int boardWidth  = columns * cardWidth;  //WIDTH OF THE BOARD 5*128=640px
+    int boardHeight = rows * cardHeight;  //HEIGHT OF THE BOARD 4*90=360px
 
-    
+    JFrame frame = new JFrame("Pokemon Match Cards");
+
     MatchCards () {
         setupCards();
         shuffleCards();
